@@ -11,6 +11,12 @@
 		CC96FB8228A0F76700CB6F75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FB8128A0F76700CB6F75 /* ContentView.swift */; };
 		CC96FB8428A0F76700CB6F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC96FB8328A0F76700CB6F75 /* Assets.xcassets */; };
 		CC96FB8728A0F76700CB6F75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC96FB8628A0F76700CB6F75 /* Preview Assets.xcassets */; };
+		CC96FB8F28A101C400CB6F75 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FB8E28A101C400CB6F75 /* User.swift */; };
+		CC96FB9128A1021E00CB6F75 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FB9028A1021E00CB6F75 /* Post.swift */; };
+		CC96FB9428A102DE00CB6F75 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FB9328A102DE00CB6F75 /* PostView.swift */; };
+		CC96FB9628A103DC00CB6F75 /* ThumbNailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FB9528A103DC00CB6F75 /* ThumbNailView.swift */; };
+		CC96FBB428A2590B00CB6F75 /* InteractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBB328A2590B00CB6F75 /* InteractionView.swift */; };
+		CC96FBBA28A2A6DD00CB6F75 /* PostPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBB928A2A6DD00CB6F75 /* PostPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		CC96FB8128A0F76700CB6F75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC96FB8328A0F76700CB6F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC96FB8628A0F76700CB6F75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC96FB8E28A101C400CB6F75 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CC96FB9028A1021E00CB6F75 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CC96FB9328A102DE00CB6F75 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		CC96FB9528A103DC00CB6F75 /* ThumbNailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbNailView.swift; sourceTree = "<group>"; };
+		CC96FBB328A2590B00CB6F75 /* InteractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionView.swift; sourceTree = "<group>"; };
+		CC96FBB928A2A6DD00CB6F75 /* PostPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,8 @@
 		CC96FB7E28A0F76700CB6F75 /* InstagramCat */ = {
 			isa = PBXGroup;
 			children = (
+				CC96FB9228A102B200CB6F75 /* Views */,
+				CC96FB8D28A101B100CB6F75 /* Models */,
 				CC96FB7F28A0F76700CB6F75 /* InstagramCatApp.swift */,
 				CC96FB8128A0F76700CB6F75 /* ContentView.swift */,
 				CC96FB8328A0F76700CB6F75 /* Assets.xcassets */,
@@ -65,6 +79,26 @@
 				CC96FB8628A0F76700CB6F75 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC96FB8D28A101B100CB6F75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC96FB8E28A101C400CB6F75 /* User.swift */,
+				CC96FB9028A1021E00CB6F75 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CC96FB9228A102B200CB6F75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC96FB9328A102DE00CB6F75 /* PostView.swift */,
+				CC96FB9528A103DC00CB6F75 /* ThumbNailView.swift */,
+				CC96FBB328A2590B00CB6F75 /* InteractionView.swift */,
+				CC96FBB928A2A6DD00CB6F75 /* PostPageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +173,12 @@
 			files = (
 				CC96FB8228A0F76700CB6F75 /* ContentView.swift in Sources */,
 				CC96FB8028A0F76700CB6F75 /* InstagramCatApp.swift in Sources */,
+				CC96FB8F28A101C400CB6F75 /* User.swift in Sources */,
+				CC96FBB428A2590B00CB6F75 /* InteractionView.swift in Sources */,
+				CC96FB9428A102DE00CB6F75 /* PostView.swift in Sources */,
+				CC96FBBA28A2A6DD00CB6F75 /* PostPageView.swift in Sources */,
+				CC96FB9128A1021E00CB6F75 /* Post.swift in Sources */,
+				CC96FB9628A103DC00CB6F75 /* ThumbNailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
