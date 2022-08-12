@@ -10,7 +10,7 @@ import SwiftUI
 /// 按讚 留言 文字
 struct InteractionView: View {
     
-    var post : Post
+    var post : PostViewModel
     
     @State var contentLength = 20
     @State var contentViewed = false
@@ -102,6 +102,6 @@ struct InteractionView: View {
 
 struct InteractionView_Previews: PreviewProvider {
     static var previews: some View {
-        InteractionView(post: Data.getData())
+        InteractionView(post: PostViewModel())
     }
 }

@@ -13,8 +13,8 @@ struct PostPageView: View {
         let post = Data.getData()
         
         ScrollView{
-            PostView(post: post)
-            PostView(post: post)
+            PostView(post: PostViewModel())
+            PostView(post: PostViewModel())
         }
     }
 }

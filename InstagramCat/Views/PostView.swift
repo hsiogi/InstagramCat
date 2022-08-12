@@ -10,7 +10,8 @@ import SwiftUI
 /// 貼文的view
 struct PostView: View {
     
-    var post : Post
+    @ObservedObject var post: PostViewModel
+    
     var body: some View {
         
         VStack(spacing: 0) {
@@ -30,7 +31,7 @@ struct PostView: View {
             
             VStack{
                 
-                AsyncImage(url: URL(string: post.image)){
+                AsyncImage(url: URL(string: post.images.first ?? "" )){
                     i in
                     i.resizable()
                         .scaledToFit()
@@ -59,7 +60,7 @@ struct PostView_Previews: PreviewProvider {
     
     
     static var previews: some View {
-        PostView(post: Data.getData())
+        PostView(post: PostViewModel())
     }
     
     
