@@ -9,7 +9,7 @@ import Foundation
 
 
 
-final class PostViewModel : ObservableObject{
+final class PostViewModel : ObservableObject, Identifiable{
     
     @Published var id = ""
     @Published var content = ""
@@ -19,6 +19,33 @@ final class PostViewModel : ObservableObject{
     @Published var likeCount = 0
     @Published var commentCount = 0
     @Published var user = UserViewModel()
+    
+    
+    
+    private let repository: PostRepositoryProtocol
+    
+    init(repository: PostRepositoryProtocol = PostRepository()){
+        self.repository = repository
+    }
+    
+    init(post: Post){
+        
+        self.id = post.id
+        self.content = post.content ?? ""
+        self.liked = post.liked
+        self.publishedTime = "最近2小時發文"
+        self.images = post.images ?? [String]()
+        self.commentCount = post.commentCount
+        self.likeCount = post.likeCount
+        
+        if let user = post.user {
+            self.user = UserViewModel(user: user)
+        }
+        
+        self.repository = PostRepository()
+        
+    }
+    
     
     
 }
