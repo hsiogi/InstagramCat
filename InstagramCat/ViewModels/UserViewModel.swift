@@ -13,4 +13,11 @@ final class UserViewModel : ObservableObject{
     
     @Published var account = ""
     
+    init(){}
+    
+    init(user: User){
+        self.thumbNail = user.thumbNail
+        self.account = user.account
+    }
+    
 }
