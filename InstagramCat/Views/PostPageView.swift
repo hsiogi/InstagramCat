@@ -9,12 +9,22 @@ import SwiftUI
 
 /// 貼文頁
 struct PostPageView: View {
+    
+    @ObservedObject var postPageViewModel = PostPageViewModel()
+    
+    
+    
     var body: some View {
-        let post = Data.getData()
+
         
         ScrollView{
-            PostView(post: PostViewModel())
-            PostView(post: PostViewModel())
+            ForEach(postPageViewModel.posts){item in
+                PostView(post: item)
+            }
+         
+           
+        }.task {
+            await postPageViewModel.getFirstPage(userId: "62f503aeaa188d05520baa31")
         }
     }
 }
