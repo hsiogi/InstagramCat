@@ -24,7 +24,7 @@ struct InteractionView: View {
                 
                 Button{
                     Task{
-                        await post.updatePostLike(userId: "62f503aeaa188d05520baa31")
+                        await post.updatePostLike(userId: MyUserDefaults.userId)
                     }
                 }label: {
                     

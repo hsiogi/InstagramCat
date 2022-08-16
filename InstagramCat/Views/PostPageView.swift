@@ -24,7 +24,7 @@ struct PostPageView: View {
          
            
         }.task {
-            await postPageViewModel.getFirstPage(userId: "62f503aeaa188d05520baa31")
+            await postPageViewModel.getFirstPage(userId: MyUserDefaults.userId)
         }
     }
 }
