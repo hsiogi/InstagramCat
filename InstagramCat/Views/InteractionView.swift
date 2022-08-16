@@ -10,11 +10,11 @@ import SwiftUI
 /// 按讚 留言 文字
 struct InteractionView: View {
     
-    var post : PostViewModel
+    @ObservedObject var post : PostViewModel
     
     @State var contentLength = 20
     @State var contentViewed = false
-    @State var liked = false
+    
     
     var body: some View {
         
@@ -23,13 +23,12 @@ struct InteractionView: View {
             HStack{
                 
                 Button{
-                    liked = liked ? false : true
-                    
-                    
-                    
+                    Task{
+                        await post.updatePostLike(userId: "62f503aeaa188d05520baa31")
+                    }
                 }label: {
                     
-                    if(liked)
+                    if(post.liked)
                     {
                         Image("like-click")
                     }
@@ -39,6 +38,7 @@ struct InteractionView: View {
                     
                     
                 }
+                
                 
                 Image("chat")
                 Image("send")
