@@ -11,10 +11,15 @@ import SwiftUI
 protocol PostRepositoryProtocol{
     
     func GetPosts(userId: String, pageIndex: Int, pageCount: Int) async throws -> [Post]
+    
+    func LikePost(userId: String, postId: String) async throws
+    
+    func UnLikePost(userId: String, postId: String) async throws
 }
 
 
 class PostRepository : PostRepositoryProtocol{
+  
     
     let service : PostServiceProtocol
     
@@ -30,6 +35,12 @@ class PostRepository : PostRepositoryProtocol{
         
     }
     
+    func LikePost(userId: String, postId: String) async throws {
+       try await service.UpdatePostLike(userId: userId, postId: postId, liked: true)
+    }
     
+    func UnLikePost(userId: String, postId: String) async throws {
+        try await service.UpdatePostLike(userId: userId, postId: postId, liked: false)
+    }
     
 }
