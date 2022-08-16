@@ -46,6 +46,32 @@ final class PostViewModel : ObservableObject, Identifiable{
         
     }
     
+    @MainActor
+    func updatePostLike(userId: String) async {
+        
+        do {
+            
+            if liked{
+                try await repository.UnLikePost(userId: userId, postId: self.id)
+                
+                liked = false
+                
+                likeCount -= 1
+            }
+            else{
+                try await repository.LikePost(userId: userId, postId: self.id)
+                
+                liked = true
+                
+                likeCount += 1
+            }
+            
+            
+        }catch{
+            print(error)
+        }
+        
+    }
     
     
 }
