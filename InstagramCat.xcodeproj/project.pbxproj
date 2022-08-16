@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC24F5DD28AB90AF00BBC8A6 /* UpdatePostLikeParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24F5DC28AB90AF00BBC8A6 /* UpdatePostLikeParam.swift */; };
+		CC24F60328AB9EE400BBC8A6 /* PostServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24F60228AB9EE400BBC8A6 /* PostServiceTests.swift */; };
 		CC96FB8028A0F76700CB6F75 /* InstagramCatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FB7F28A0F76700CB6F75 /* InstagramCatApp.swift */; };
 		CC96FB8228A0F76700CB6F75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FB8128A0F76700CB6F75 /* ContentView.swift */; };
 		CC96FB8428A0F76700CB6F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC96FB8328A0F76700CB6F75 /* Assets.xcassets */; };
@@ -18,10 +20,6 @@
 		CC96FBB428A2590B00CB6F75 /* InteractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBB328A2590B00CB6F75 /* InteractionView.swift */; };
 		CC96FBBA28A2A6DD00CB6F75 /* PostPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBB928A2A6DD00CB6F75 /* PostPageView.swift */; };
 		CC96FBBD28A5F93D00CB6F75 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBBC28A5F93D00CB6F75 /* PostService.swift */; };
-		CC96FBC828A6050500CB6F75 /* PostServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBC728A6050500CB6F75 /* PostServiceTests.swift */; };
-		CC96FBCE28A609F200CB6F75 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBBC28A5F93D00CB6F75 /* PostService.swift */; };
-		CC96FBCF28A60A2000CB6F75 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FB9028A1021E00CB6F75 /* Post.swift */; };
-		CC96FBD028A60A2800CB6F75 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FB8E28A101C400CB6F75 /* User.swift */; };
 		CC96FBD328A6249500CB6F75 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBD228A6249400CB6F75 /* PostViewModel.swift */; };
 		CC96FBD528A626A700CB6F75 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBD428A626A700CB6F75 /* UserViewModel.swift */; };
 		CC96FBD828A629B000CB6F75 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBD728A629B000CB6F75 /* PostRepository.swift */; };
@@ -29,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CC96FBC928A6050500CB6F75 /* PBXContainerItemProxy */ = {
+		CC24F5FD28AB9EB500BBC8A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CC96FB7428A0F76700CB6F75 /* Project object */;
 			proxyType = 1;
@@ -39,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC24F5DC28AB90AF00BBC8A6 /* UpdatePostLikeParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePostLikeParam.swift; sourceTree = "<group>"; };
+		CC24F5F928AB9EB500BBC8A6 /* InstagramCatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramCatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC24F60228AB9EE400BBC8A6 /* PostServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceTests.swift; sourceTree = "<group>"; };
 		CC96FB7C28A0F76700CB6F75 /* InstagramCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC96FB7F28A0F76700CB6F75 /* InstagramCatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCatApp.swift; sourceTree = "<group>"; };
 		CC96FB8128A0F76700CB6F75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,8 +52,6 @@
 		CC96FBB328A2590B00CB6F75 /* InteractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionView.swift; sourceTree = "<group>"; };
 		CC96FBB928A2A6DD00CB6F75 /* PostPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageView.swift; sourceTree = "<group>"; };
 		CC96FBBC28A5F93D00CB6F75 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
-		CC96FBC528A6050500CB6F75 /* InstagramCatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramCatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC96FBC728A6050500CB6F75 /* PostServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostServiceTests.swift; sourceTree = "<group>"; };
 		CC96FBD228A6249400CB6F75 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		CC96FBD428A626A700CB6F75 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		CC96FBD728A629B000CB6F75 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
@@ -60,14 +59,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC96FB7928A0F76700CB6F75 /* Frameworks */ = {
+		CC24F5F628AB9EB500BBC8A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC96FBC228A6050500CB6F75 /* Frameworks */ = {
+		CC96FB7928A0F76700CB6F75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,11 +76,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC24F5DB28AB909500BBC8A6 /* Param */ = {
+			isa = PBXGroup;
+			children = (
+				CC24F5DC28AB90AF00BBC8A6 /* UpdatePostLikeParam.swift */,
+			);
+			path = Param;
+			sourceTree = "<group>";
+		};
+		CC24F5FA28AB9EB500BBC8A6 /* InstagramCatTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC24F60228AB9EE400BBC8A6 /* PostServiceTests.swift */,
+			);
+			path = InstagramCatTests;
+			sourceTree = "<group>";
+		};
 		CC96FB7328A0F76700CB6F75 = {
 			isa = PBXGroup;
 			children = (
 				CC96FB7E28A0F76700CB6F75 /* InstagramCat */,
-				CC96FBC628A6050500CB6F75 /* InstagramCatTests */,
+				CC24F5FA28AB9EB500BBC8A6 /* InstagramCatTests */,
 				CC96FB7D28A0F76700CB6F75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				CC96FB7C28A0F76700CB6F75 /* InstagramCat.app */,
-				CC96FBC528A6050500CB6F75 /* InstagramCatTests.xctest */,
+				CC24F5F928AB9EB500BBC8A6 /* InstagramCatTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,17 +157,10 @@
 		CC96FBBB28A5F89F00CB6F75 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CC24F5DB28AB909500BBC8A6 /* Param */,
 				CC96FBBC28A5F93D00CB6F75 /* PostService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		CC96FBC628A6050500CB6F75 /* InstagramCatTests */ = {
-			isa = PBXGroup;
-			children = (
-				CC96FBC728A6050500CB6F75 /* PostServiceTests.swift */,
-			);
-			path = InstagramCatTests;
 			sourceTree = "<group>";
 		};
 		CC96FBD128A6246500CB6F75 /* ViewModels */ = {
@@ -176,6 +184,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CC24F5F828AB9EB500BBC8A6 /* InstagramCatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC24F5FF28AB9EB500BBC8A6 /* Build configuration list for PBXNativeTarget "InstagramCatTests" */;
+			buildPhases = (
+				CC24F5F528AB9EB500BBC8A6 /* Sources */,
+				CC24F5F628AB9EB500BBC8A6 /* Frameworks */,
+				CC24F5F728AB9EB500BBC8A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC24F5FE28AB9EB500BBC8A6 /* PBXTargetDependency */,
+			);
+			name = InstagramCatTests;
+			productName = InstagramCatTests;
+			productReference = CC24F5F928AB9EB500BBC8A6 /* InstagramCatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CC96FB7B28A0F76700CB6F75 /* InstagramCat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC96FB8A28A0F76700CB6F75 /* Build configuration list for PBXNativeTarget "InstagramCat" */;
@@ -193,24 +219,6 @@
 			productReference = CC96FB7C28A0F76700CB6F75 /* InstagramCat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CC96FBC428A6050500CB6F75 /* InstagramCatTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC96FBCB28A6050500CB6F75 /* Build configuration list for PBXNativeTarget "InstagramCatTests" */;
-			buildPhases = (
-				CC96FBC128A6050500CB6F75 /* Sources */,
-				CC96FBC228A6050500CB6F75 /* Frameworks */,
-				CC96FBC328A6050500CB6F75 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC96FBCA28A6050500CB6F75 /* PBXTargetDependency */,
-			);
-			name = InstagramCatTests;
-			productName = InstagramCatTests;
-			productReference = CC96FBC528A6050500CB6F75 /* InstagramCatTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -221,12 +229,13 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					CC24F5F828AB9EB500BBC8A6 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+						TestTargetID = CC96FB7B28A0F76700CB6F75;
+					};
 					CC96FB7B28A0F76700CB6F75 = {
 						CreatedOnToolsVersion = 13.3.1;
-					};
-					CC96FBC428A6050500CB6F75 = {
-						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = CC96FB7B28A0F76700CB6F75;
 					};
 				};
 			};
@@ -244,12 +253,19 @@
 			projectRoot = "";
 			targets = (
 				CC96FB7B28A0F76700CB6F75 /* InstagramCat */,
-				CC96FBC428A6050500CB6F75 /* InstagramCatTests */,
+				CC24F5F828AB9EB500BBC8A6 /* InstagramCatTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CC24F5F728AB9EB500BBC8A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC96FB7A28A0F76700CB6F75 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,16 +275,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC96FBC328A6050500CB6F75 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CC24F5F528AB9EB500BBC8A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC24F60328AB9EE400BBC8A6 /* PostServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC96FB7828A0F76700CB6F75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,6 +295,7 @@
 				CC96FBD528A626A700CB6F75 /* UserViewModel.swift in Sources */,
 				CC96FB8228A0F76700CB6F75 /* ContentView.swift in Sources */,
 				CC96FBDA28A62CEC00CB6F75 /* PostPageViewModel.swift in Sources */,
+				CC24F5DD28AB90AF00BBC8A6 /* UpdatePostLikeParam.swift in Sources */,
 				CC96FB8028A0F76700CB6F75 /* InstagramCatApp.swift in Sources */,
 				CC96FB8F28A101C400CB6F75 /* User.swift in Sources */,
 				CC96FBB428A2590B00CB6F75 /* InteractionView.swift in Sources */,
@@ -289,28 +307,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC96FBC128A6050500CB6F75 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC96FBD028A60A2800CB6F75 /* User.swift in Sources */,
-				CC96FBCF28A60A2000CB6F75 /* Post.swift in Sources */,
-				CC96FBC828A6050500CB6F75 /* PostServiceTests.swift in Sources */,
-				CC96FBCE28A609F200CB6F75 /* PostService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CC96FBCA28A6050500CB6F75 /* PBXTargetDependency */ = {
+		CC24F5FE28AB9EB500BBC8A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CC96FB7B28A0F76700CB6F75 /* InstagramCat */;
-			targetProxy = CC96FBC928A6050500CB6F75 /* PBXContainerItemProxy */;
+			targetProxy = CC24F5FD28AB9EB500BBC8A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		CC24F60028AB9EB500BBC8A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Q9PUFM6ZA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hsiogi.InstagramCatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstagramCat.app/InstagramCat";
+			};
+			name = Debug;
+		};
+		CC24F60128AB9EB500BBC8A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9Q9PUFM6ZA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hsiogi.InstagramCatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstagramCat.app/InstagramCat";
+			};
+			name = Release;
+		};
 		CC96FB8828A0F76700CB6F75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,45 +541,18 @@
 			};
 			name = Release;
 		};
-		CC96FBCC28A6050500CB6F75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9Q9PUFM6ZA;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hsiogi.InstagramCatTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstagramCat.app/InstagramCat";
-			};
-			name = Debug;
-		};
-		CC96FBCD28A6050500CB6F75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9Q9PUFM6ZA;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hsiogi.InstagramCatTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstagramCat.app/InstagramCat";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CC24F5FF28AB9EB500BBC8A6 /* Build configuration list for PBXNativeTarget "InstagramCatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC24F60028AB9EB500BBC8A6 /* Debug */,
+				CC24F60128AB9EB500BBC8A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CC96FB7728A0F76700CB6F75 /* Build configuration list for PBXProject "InstagramCat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -538,15 +567,6 @@
 			buildConfigurations = (
 				CC96FB8B28A0F76700CB6F75 /* Debug */,
 				CC96FB8C28A0F76700CB6F75 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC96FBCB28A6050500CB6F75 /* Build configuration list for PBXNativeTarget "InstagramCatTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC96FBCC28A6050500CB6F75 /* Debug */,
-				CC96FBCD28A6050500CB6F75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
