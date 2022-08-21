@@ -13,6 +13,12 @@ final class UserViewModel : ObservableObject{
     
     @Published var account = ""
     
+    @Published var name = ""
+    
+    @Published var follower_count = 0
+    
+    @Published var following_count = 0
+    
     init(){}
     
     init(user: User){
