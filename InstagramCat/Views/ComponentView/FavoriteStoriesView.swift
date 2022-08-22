@@ -116,7 +116,7 @@ struct FavoriteStoriesView: View {
             }
             
             
-            Spacer()
+          
             
             
             
