@@ -13,7 +13,7 @@ struct UserInfoView: View {
     @State var followerCount : Int
     @State var followingCount : Int
     var body: some View {
-        HStack(spacing: 40){
+        HStack(alignment: .center){
             VStack{
                 Text(postCount.description)
                     .font(.body)
@@ -21,7 +21,7 @@ struct UserInfoView: View {
                 
                 Text("貼文")
                     .font(.body)
-            }
+            }.padding(.horizontal)
             
             VStack{
                 Text(followerCount.description)
@@ -29,7 +29,7 @@ struct UserInfoView: View {
                     .bold()
                 Text("粉絲")
                     .font(.body)
-            }
+            }.padding(.horizontal)
             
             VStack{
                 Text(followerCount.description)
@@ -37,7 +37,8 @@ struct UserInfoView: View {
                     .bold()
                 Text("追蹤中")
                     .font(.body)
-            }
+                    
+            }.padding(.horizontal)
         }
     }
 }
