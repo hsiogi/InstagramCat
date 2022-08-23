@@ -31,6 +31,7 @@
 		CC96FBD828A629B000CB6F75 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBD728A629B000CB6F75 /* PostRepository.swift */; };
 		CC96FBDA28A62CEC00CB6F75 /* PostPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC96FBD928A62CEC00CB6F75 /* PostPageViewModel.swift */; };
 		CCB86F3328B24C860030CC35 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB86F3228B24C860030CC35 /* PostGridView.swift */; };
+		CCB86F3528B32ECB0030CC35 /* UserPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB86F3428B32ECB0030CC35 /* UserPageTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		CC96FBD728A629B000CB6F75 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
 		CC96FBD928A62CEC00CB6F75 /* PostPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPageViewModel.swift; sourceTree = "<group>"; };
 		CCB86F3228B24C860030CC35 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		CCB86F3428B32ECB0030CC35 /* UserPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				CC24F60E28AE187E00BBC8A6 /* FavoriteStoriesView.swift */,
 				CC96FB9328A102DE00CB6F75 /* PostView.swift */,
 				CCB86F3228B24C860030CC35 /* PostGridView.swift */,
+				CCB86F3428B32ECB0030CC35 /* UserPageTabView.swift */,
 			);
 			path = ComponentView;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC24F60F28AE187E00BBC8A6 /* FavoriteStoriesView.swift in Sources */,
+				CCB86F3528B32ECB0030CC35 /* UserPageTabView.swift in Sources */,
 				CC96FBD328A6249500CB6F75 /* PostViewModel.swift in Sources */,
 				CC24F60B28AE0E7C00BBC8A6 /* UserPageViewModel.swift in Sources */,
 				CC96FBD828A629B000CB6F75 /* PostRepository.swift in Sources */,
