@@ -11,29 +11,37 @@ struct PostGridView: View {
     
     @Binding var posts : [PostViewModel]
     
-    let columns = [GridItem(.flexible(), spacing: 1), GridItem(.flexible(), spacing: 1),GridItem(.flexible(), spacing: 1)]
+    let columns = [GridItem(.flexible(), spacing: 1, alignment: .top), GridItem(.flexible(), spacing: 1, alignment: .top),GridItem(.flexible(), spacing: 1, alignment: .top)]
     
+    @State var heightn = CGFloat(0)
     
+ 
     
     var body: some View {
         
-        LazyVGrid(columns: columns, spacing: 1){
-            ForEach(posts){ item in
-                
-                AsyncImage(url: URL(string: item.images[0])){
-                    image in
-                    image.resizable()
-                        .scaledToFill()
-                } placeholder: {
-                    Color.gray
+        ScrollView{
+      
+            LazyVGrid(columns: columns, spacing: 1){
+                ForEach(posts){ item in
+
+                    AsyncImage(url: URL(string: item.images[0])){
+                        image in
+                        image.resizable()
+                            .scaledToFill()
+                    } placeholder: {
+                        Color.gray
+                    }
+                    .frame(width: UIScreen.main.bounds.width / 3,
+                           height: UIScreen.main.bounds.width / 3)
+                    .clipped()
+
                 }
-                .frame(width: UIScreen.main.bounds.width / 3,
-                       height: UIScreen.main.bounds.width / 3)
-                .clipped()
+              }
                 
-            }
-        }
+          
         
+        
+        }
     }
     
     
@@ -47,11 +55,11 @@ struct PostGridView_Previews: PreviewProvider {
         PostGridView(posts: $viewModel)
     }
     
-    private static func getViewModel() -> [PostViewModel]{
+    public static func getViewModel() -> [PostViewModel]{
         
         var result = [PostViewModel]()
         
-        for index in 1...10 {
+        for index in 1...3 {
             let viewModel = PostViewModel()
             
             viewModel.id = index.description
