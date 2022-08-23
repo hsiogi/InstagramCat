@@ -12,53 +12,54 @@ struct UserPageView: View {
     @ObservedObject var model = UserPageViewModel()
     
     var body: some View {
-        
-        ScrollView{
-            VStack(alignment: .leading){
-                
-                HStack(){
-                    Text(model.user.account)
-                        .font(.title)
-                        .bold()
-                    Spacer()
+        GeometryReader{ proxy in
+            ScrollView(showsIndicators: false){
+                VStack(alignment: .leading){
                     
-                    Image(systemName: "plus.app")
-                        .imageScale(.large)
+                                    HStack(){
+                                        Text(model.user.account)
+                                            .font(.title)
+                                            .bold()
+                                        Spacer()
                     
-                    Image(systemName: "list.bullet")
-                        .imageScale(.large)
-                }.padding()
-                
-                HStack(){
+                                        Image(systemName: "plus.app")
+                                            .imageScale(.large)
                     
-                    VStack(alignment: .leading){
+                                        Image(systemName: "list.bullet")
+                                            .imageScale(.large)
+                                    }.padding()
+                    
+                                    HStack(){
+                    
+                                        VStack(alignment: .leading){
+                    
+                                            ThumbNailView(thumbNail: model.user.thumbNail, width: 80, height: 80)
+                                            Text(model.user.name)
+                                                .font(.subheadline)
+                    
+                                        }.padding(.trailing)
+                    
+                                        UserInfoView(postCount: model.postCount, followerCount: model.user.follower_count, followingCount: model.user.following_count)
+                    
+                    
+                    
+                    
+                    
+                                    }.padding()
+                    
+                                    FavoriteStoriesView()
+                    
+                 
                         
-                        ThumbNailView(thumbNail: model.user.thumbNail, width: 80, height: 80)
-                        Text(model.user.name)
-                            .font(.subheadline)
-                        
-                    }.padding(.trailing)
-                    
-                    UserInfoView(postCount: model.postCount, followerCount: model.user.follower_count, followingCount: model.user.following_count)
+                        UserPageTabView(posts: $model.posts)
+                            .frame(height: proxy.size.height)
+            
                     
                     
                     
-                    
-                    
-                }.padding()
-                
-                FavoriteStoriesView()
-                
-                PostGridView(posts: $model.posts)
-                    .task {
-                        await model.getPosts()
-                    }
-                
-                Spacer()
-                
+                }
             }
         }
-        
         
     }
 }
@@ -82,7 +83,7 @@ struct UserPageView_Previews: PreviewProvider {
         let model = UserPageViewModel()
         model.user.account = "coder_marra"
         model.user.name = "Marra Lin"
-        model.posts = [postViewModel]
+        model.posts = PostGridView_Previews.getViewModel()
         return model
     }
 }
